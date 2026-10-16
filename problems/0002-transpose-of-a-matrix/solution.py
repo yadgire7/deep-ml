@@ -1,0 +1,15 @@
+import torch
+
+def transpose_matrix(a) -> torch.Tensor:
+    """
+    Transpose a 2D matrix using PyTorch.
+    
+    Args:
+        a: A 2D matrix (can be list, numpy array, or torch.Tensor)
+    
+    Returns:
+        A transposed torch.Tensor
+    """
+    a_t = torch.as_tensor(a)
+    a_t = torch.transpose(a_t, dim0= 0, dim1 = 1)
+    return a_t
